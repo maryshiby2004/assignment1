@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css">
+	<script src="storymaker.js" defer></script>
+	<style>
+
+		#noun1 { background-color: violet; }
+		#verb { background-color: blue; }
+		#adjective { background-color: green; }
+		#noun2 { background-color: orange; }
+		#setting { background-color: pink; }
+	</style>
+</head>
+
+<body>
+<h1>See-N-Say Storymaker</h1>
+<p id="studentId"></p>
+<section>
+
+	<h2>Create Your Story</h2>
+	<button id="noun1" onclick="noun1_on_click()">Noun 1</button>
+	<p id="choosenNoun1"></p>
+	<button id="verb" onclick="verb_on_click()">Verb</button>
+	<p id="choosenVerb"></p>
+	<button id="adjective" onclick="adjective_on_click()">Adjective</button>
+	<p id="choosenAdjective"></p>
+	<button id="noun2" onclick="noun2_on_click()">Noun 2</button>
+	<p id="choosenNoun2"></p>
+	<button id="setting" onclick="setting_on_click()">Setting</button>
+	<p id="choosenSetting"></p>
+	<button id="addStudentId" onclick="addStudentId()">Add Student ID</button>
+</section>
+<section>
+
+	<h2>See Your Story</h2>
+	<button id="playback" onclick="playback_on_click()">Show Story</button>
+	<button id="random" onclick="random_on_click()">Random Story</button>
+
+	<p id="story"></p>
+</section>
+</body>
+
+</html>
